@@ -1,21 +1,61 @@
-.gridContainer {
-    width: 80%;
+.body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #bfd7ff;
+}
+
+.header {
+    text-align: center;
+    color: #5465ff;
+}
+
+.buttonContainer {
     display: flex;
-    flex-direction: column;
+    justify-content: center;
+}
+
+.btn {
+    width: 15%;
+    height: 30px;
+    background-color: #5465ff;
+    margin: 20px;
+    color: #e2fdff;
+    font-weight: bold;
+    font-size: large;
+}
+
+.container {
+    display: flex;
+    margin: 20px;
     justify-self: center;
+    justify-content: center;
+}
+
+.gridContainer {
+    width: 500px;
+    height: 500px;
+    display: flex;
+    flex-basis: auto;
+    flex-direction: column;
+    border: 3px solid #5465ff;
+    align-content: center;
     align-self: center;
-    align-items: center;
 }
 
 .gridRow {
-    display: flex;
-    
+    width: 100%;
+    flex-grow: 1;
 }
 
 #cellid {
-    border: 0.5px solid black;
-    width: 20px;
-    height: 20px;
+    flex-grow: 1;
+    align-self: stretch;
+    background-color: #e2fdff;
+}
 
-    
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 10px;
+    width: 100%;
+    text-align: center;
 }
